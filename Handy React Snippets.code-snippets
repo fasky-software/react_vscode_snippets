@@ -1,0 +1,231 @@
+{
+  /************
+      Core
+      *************/
+  "Import": {
+    "scope": "typescriptreact, javascriptreact, javascript, typescript",
+    "prefix": "imp",
+    "body": ["import { $1 } from '$2'"],
+    "description": "Creates an Import"
+  },
+  "Method": {
+    "scope": "typescriptreact, javascriptreact, javascript, typescript",
+    "prefix": "met",
+    "body": ["const $1 = ($2) => {", "    $3", "}"],
+    "description": "Creates a simple Method"
+  },
+  "Exported Method": {
+    "scope": "typescriptreact, javascriptreact, javascript, typescript",
+    "prefix": "emet",
+    "body": ["export const $1 = ($2) => {", "    $3", "}"],
+    "description": "Creates a simple exported Method"
+  },
+  "Console Log": {
+    "scope": "typescriptreact, javascriptreact, javascript, typescript",
+    "prefix": "cl",
+    "body": ["console.log($1)"],
+    "description": "Creates a console.log()"
+  },
+  "Console Log with Label": {
+    "scope": "typescriptreact, javascriptreact, javascript, typescript",
+    "prefix": "cll",
+    "body": ["console.log(\"$1\", $2)"],
+    "description": "Creates a console.log() with a label"
+  },
+  "Lodash Import": {
+    "scope": "typescriptreact, javascriptreact, javascript, typescript",
+    "prefix": "imp_",
+    "body": ["import lodash from \"lodash\""],
+    "description": "Creates an Import for lodash"
+  },
+  "Moment Import": {
+    "scope": "typescriptreact, javascriptreact, javascript, typescript",
+    "prefix": "impm",
+    "body": ["import moment from \"moment\""],
+    "description": "Creates an Import for moment"
+  },
+  /************
+      Typescript
+      *************/
+  "Functional Component TS": {
+    "scope": "typescriptreact",
+    "prefix": "fc",
+    "body": [
+      "import React, { FunctionComponent, Fragment } from 'react'",
+      "",
+      "interface I$1Props {}",
+      "",
+      "export const $1: FunctionComponent<I$1Props> = props => {",
+      "    return <Fragment>",
+      "           $2",
+      "      </Fragment>",
+      "}"
+    ],
+    "description": "Creates a Functional Component"
+  },
+  "Functional Component Styles TS": {
+    "scope": "typescriptreact",
+    "prefix": "fcs",
+    "body": [
+      "import React, { FunctionComponent, Fragment } from 'react'",
+      "import { Theme, makeStyles } from '@material-ui/core'",
+      "",
+      "const useStyles = makeStyles((theme: Theme) => ({",
+      "}))",
+      "",
+      "interface I$1Props {}",
+      "",
+      "export const $1: FunctionComponent<I$1Props> = props => {",
+      "    const classes = useStyles()",
+      "    return <Fragment>",
+      "           $2",
+      "      </Fragment>",
+      "}"
+    ],
+    "description": "Creates a Functional Component with a useStyles and useTranslation Hook"
+  },
+  "Functional Component Styles Translation TS": {
+    "scope": "typescriptreact",
+    "prefix": "fcst",
+    "body": [
+      "import React, { FunctionComponent, Fragment } from 'react'",
+      "import { Theme, makeStyles } from '@material-ui/core'",
+      "import { useTranslation } from 'react-i18next'",
+      "",
+      "const useStyles = makeStyles((theme: Theme) => ({",
+      "}))",
+      "",
+      "interface I$1Props {}",
+      "",
+      "export const $1: FunctionComponent<I$1Props> = props => {",
+      "    const classes = useStyles()",
+      "    const { t } = useTranslation()",
+      "    return <Fragment>",
+      "           $2",
+      "      </Fragment>",
+      "}"
+    ],
+    "description": "Creates a Functional Component with a useStyles and useTranslation Hook"
+  },
+  "Use State TS": {
+    "scope": "typescriptreact",
+    "prefix": "us",
+    "body": ["const [$1, set$2] = useState<$3>($4)"],
+    "description": "Creates useState"
+  },
+  "Context TS": {
+    "scope": "typescriptreact",
+    "prefix": "ctx",
+    "body": [
+      "import React, { useContext, createContext } from 'react'",
+      "",
+      "interface $1ContextType {}",
+      "",
+      "const $1Context = createContext<$1ContextType>({} as $1ContextType)",
+      "",
+      "export const $1Provider = (props: any) => {",
+      "",
+      "  const value = use$1Provider()",
+      "  return <$1Context.Provider value={value}>{props.children}</$1Context.Provider>",
+      "}",
+      "",
+      "export const use$1 = () => {",
+      "  return useContext($1Context)",
+      "}",
+      "",
+      "const use$1Provider = (): $1ContextType => {",
+      "  return {}",
+      "}"
+    ],
+    "description": "Creates a custom context hook"
+  },
+  "Hook TS": {
+    "scope": "typescriptreact",
+    "prefix": "hook",
+    "body": [
+      "interface TestContextType {}",
+      "",
+      "export const useTest = (): TestContextType => {",
+      "  $1",
+      "  return {}",
+      "}"
+    ]
+  },
+  "Hook State TS": {
+    "scope": "typescriptreact",
+    "prefix": "shook",
+    "body": [
+      "import { useState } from 'react'",
+      "",
+      "interface TestContextType {}",
+      "",
+      "export const useTest = (): TestContextType => {",
+      "  const [$1, set$2] = useState<$3>($4)",
+      "  return {}",
+      "}"
+    ]
+  },
+  /************
+      Javascript
+      *************/
+  "Functional Component JS": {
+    "scope": "javascriptreact",
+    "prefix": "fc",
+    "body": [
+      "import React, { Fragment } from 'react'",
+      "",
+      "export const $1 = props => {",
+      "    return <Fragment>",
+      "           $2",
+      "      </Fragment>",
+      "}"
+    ],
+    "description": "Creates a Functional Component"
+  },
+  "Functional Component Styles JS": {
+    "scope": "javascriptreact",
+    "prefix": "fcs",
+    "body": [
+      "import React, { Fragment } from 'react'",
+      "import { Theme, makeStyles } from '@material-ui/core'",
+      "",
+      "const useStyles = makeStyles((theme) => ({",
+      "}))",
+      "",
+      "export const $1 = props => {",
+      "    const classes = useStyles()",
+      "    return <Fragment>",
+      "           $2",
+      "      </Fragment>",
+      "}"
+    ],
+    "description": "Creates a Functional Component with a useStyles and useTranslation Hook"
+  },
+  "Functional Component Styles Translation JS": {
+    "scope": "javascriptreact",
+    "prefix": "fcst",
+    "body": [
+      "import React, { Fragment } from 'react'",
+      "import { Theme, makeStyles } from '@material-ui/core'",
+      "import { useTranslation } from 'react-i18next'",
+      "",
+      "const useStyles = makeStyles((theme) => ({",
+      "}))",
+      "",
+      "export const $1 = props => {",
+      "    const classes = useStyles()",
+      "    const { t } = useTranslation()",
+      "    return <Fragment>",
+      "           $2",
+      "      </Fragment>",
+      "}"
+    ],
+    "description": "Creates a Functional Component with a useStyles and useTranslation Hook"
+  },
+  "Use State JS": {
+    "scope": "javascriptreact",
+    "prefix": "us",
+    "body": ["const [$1, set$1] = useState($2)"],
+    "description": "Creates useState"
+  }
+}
