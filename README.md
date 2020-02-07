@@ -6,7 +6,7 @@
 </p>
 
 <p align="center">
-    <img alt="showcase" src="https://raw.githubusercontent.com/fasky-software/react_vscode_snippets/master/assets/recording.gif" width="550">
+    <img alt="showcase" src="https://raw.githubusercontent.com/fasky-software/react_vscode_snippets/master/assets/recording.gif" width="700">
 </p>
 
 <div align="center">
