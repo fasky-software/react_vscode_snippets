@@ -10,7 +10,9 @@
 </p>
 
 <div align="center">
-  <strong>🚀🖥 Faster coding - more productivity</strong>
+  🚀# <strong>Faster coding - more productivity</strong> # 🖥
+</div>
+<div align="center">
 </div>
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
@@ -25,25 +27,23 @@
 
 ## Installation 🔧
 
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
-
 `curl -so- https://raw.githubusercontent.com/fasky-software/react_vscode_snippets/master/install.sh | bash`
 
 ## Usage 💡
 
-Simply type in the command and press enter.
+Open your project with <a href="https://code.visualstudio.com/">Visual Studio Code</a> and simply type in the command.
 
 ## Commands 🏷
 
 A few of the things you can do with these Snippets:
 
-| Command | Description                               |
-| ------- | ----------------------------------------- |
-| fcs     | Create a functional component with styles |
-| us      | Create a React State Variable             |
-| hook    | Create a custom hook                      |
-| shook   | Create a custom hook with state           |
-| ctx     | Create a React Context                    |
+| Command | Description                                 |
+| ------- | ------------------------------------------- |
+| fcs     | Generate a functional component with styles |
+| us      | Generate a React State Variable             |
+| hook    | Generate a custom hook                      |
+| shook   | Generate a custom hook with state           |
+| ctx     | Generate a React Context                    |
 
 ## Contributors 🤓
 
