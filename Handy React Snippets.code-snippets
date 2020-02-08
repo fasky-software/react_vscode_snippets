@@ -157,10 +157,10 @@
     "body": [
       "import { useState } from 'react'",
       "",
-      "interface TestContextType {}",
+      "interface $1ContextType {}",
       "",
-      "export const useTest = (): TestContextType => {",
-      "  const [$1, set$2] = useState<$3>($4)",
+      "export const use$1 = (): $1ContextType => {",
+      "  const [$2, set$3] = useState<$4>($5)",
       "  return {}",
       "}"
     ]
