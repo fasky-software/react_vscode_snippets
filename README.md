@@ -47,7 +47,7 @@ A few of the things you can do with these Snippets:
 
 ## Contributors 🤓
 
-Thank you to all our contributors with a special thanks to <a href="">Max</a> 🙏
+Thank you to all our contributors with a special thanks to <a href="https://github.com/MaxHaider">Max</a> 🙏
 
 | [<img alt="Max Haider" src="https://avatars0.githubusercontent.com/u/22192150?s=400&v=4" width="117">](https://github.com/MaxHaider) | [<img alt="Thomas Leiter" src="https://avatars3.githubusercontent.com/u/20393156?s=400&u=ae0a43de5d81d58a698abffe4e2ede024f2b6700&v=4" width="117">](https://github.com/tomLadder) | [<img alt="Thomas Leiter" src="https://avatars2.githubusercontent.com/u/11005451?s=460&v=4" width="117">](https://github.com/sutefan1) |
 | ------------------------------------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------- |
