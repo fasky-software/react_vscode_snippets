@@ -45,8 +45,33 @@
     "description": "Creates an Import for moment"
   },
   /************
+      Typescript React Native
+  *************/
+  "Functional Component Styles TS RN": {
+    "scope": "typescriptreact",
+    "prefix": "rnfcs",
+    "body": [
+      "import React, {FunctionComponent} from 'react';",
+      "",
+      "const useStyles = (): any => {",
+      "  return {}",
+      "};",
+      "",
+      "interface I$1Props {}",
+      "",
+      "export const $1: FunctionComponent<I$1Props> = props => {",
+      "  const styles = useStyles()",
+      "  ",
+      "  return (",
+      "    $2",
+      "  )",
+      "}"
+    ],
+    "description": "Creates a Functional Styles React Native Component"
+  },
+  /************
       Typescript
-      *************/
+  *************/
   "Functional Component TS": {
     "scope": "typescriptreact",
     "prefix": "fc",
@@ -167,7 +192,7 @@
   },
   /************
       Javascript
-      *************/
+  *************/
   "Functional Component JS": {
     "scope": "javascriptreact",
     "prefix": "fc",

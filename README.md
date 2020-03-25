@@ -37,13 +37,14 @@ Open your project with <a href="https://code.visualstudio.com/">Visual Studio Co
 
 A few of the things you can do with these Snippets:
 
-| Command | Description                                 |
-| ------- | ------------------------------------------- |
-| fcs     | Generate a functional component with styles |
-| us      | Generate a React State Variable             |
-| hook    | Generate a custom hook                      |
-| shook   | Generate a custom hook with state           |
-| ctx     | Generate a React Context                    |
+| Command | Description                                              |
+| ------- | -------------------------------------------------------- |
+| fcs     | Generate a functional component with styles              |
+| us      | Generate a React State Variable                          |
+| hook    | Generate a custom hook                                   |
+| shook   | Generate a custom hook with state                        |
+| ctx     | Generate a React Context                                 |
+| rnfcs   | Generate a React Native functional component with styles |
 
 ## Contributors 🤓
 
