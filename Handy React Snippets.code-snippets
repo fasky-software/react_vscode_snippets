@@ -252,5 +252,31 @@
     "prefix": "us",
     "body": ["const [$1, set$1] = useState($2)"],
     "description": "Creates useState"
+  },
+  "Context JS": {
+    "scope": "javascriptreact",
+    "prefix": "ctx",
+    "body": [
+      "import React, { useContext, createContext, useState } from 'react';",
+      "  const $1Context = createContext({});",
+      "",
+      "  export const $1Provider = props => {",
+      "    const value = use$1Provider();",
+      "    return (",
+      "      <$1Context.Provider value={value}>",
+      "        {props.children}",
+      "      </$1Context.Provider>",
+      "    );",
+      "  };",
+      "",
+      "  export const use$1 = () => {",
+      "    return useContext($1Context);",
+      "  };",
+      "",
+      "  const use$1Provider = () => {",
+      "    return {};",
+      "  };"
+    ],
+    "description": "Creates a custom context hook"
   }
 }
